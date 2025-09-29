@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Cafe la victoria">
+    <meta name="description" content="Página de una cafeteria">
+    <meta name="keywords" content="cafetería, café, menú, HTML">
+    
+    <title>Cafe la victoria</title>
+
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; background: #96704d; }
+        header, footer { background: #6b4226; color: rgb(7, 7, 7); padding: 15px; text-align: center; }
+        article { background: #fff; padding: 15px; margin-bottom: 20px; border-radius: 10px;}
+        h1, h2, h3 { color: #000000; }
+        img { max-width: 250px; display: block; margin: 10px auto; border-radius: 8px; }
+        hr { margin: 20px 0; }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Cafe la victoria</h1>
+    </header>
+    <hr>
+    <article>
+        <h2>Sobre nosotros</h2>
+        <p>Bienvenido a cafe la victoria.</p>
+        <figure>
+            <img src="cafeteria.jpg" alt="Foto de la cafetería">
+        </figure>
+    </article>
+
+    <article>
+        <h2>Menú del Día</h2>
+        <ul>
+            <li>Cafe negro</li>
+            <li>Espresso</li>
+            <li>Te de hierbas</li>
+        </ul>
+    </article>
+
+    <hr>
+
+    <article>
+        <h2>Ambiente de la cafeteria</h2>
+        <video width="320" height="240" controls>
+            <source src="cafeteria-tour.mp4" type="video/mp4">
+        </video>
+        <audio controls>
+            <source src="musica-cafe.mp3" type="audio/mpeg">
+        </audio>
+    </article>
+
+    <hr>
+
+    <article>
+        <h2>Reserva tu mesa</h2>
+        <form>
+            <label for="nombre">Tu Nombre:</label>
+            <input type="text" id="nombre" name="nombre"><br><br>
+
+            <label for="bebida">Elige tu bebida:</label>
+            <select id="bebida" name="bebida">
+                <option value="cafe negro">Cafe negro</option>
+                <option value="espresso">Espresso</option>
+                <option value="te de hierbas">Te de hierbas</option>
+            </select><br><br>
+
+            <input type="submit" value="Reservar">
+        </form>
+    </article>
+
+    <footer>
+        <p>Calle la victoria, manta.</p>
+        <p>Cafe la victoria</p>
+    </footer>
+</body>
+</html>
