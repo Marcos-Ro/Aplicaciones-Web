@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hoja de Vida - Marcos Cevallos</title> /* */
+    <style>
+        body { 
+            font-family: Arial, sans-serif;
+            margin: 0;
+            background: #c8eef3; 
+            color: #333;
+        } /* en esta parte modificaremos el contorno de la pagina, con una definicion de texto, margenes,*/
+         /*color de transfondo y color del texto. */
+
+        .container {
+            width: 50%;
+            margin: auto;
+            background: #eeeeee;
+            padding: 25px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+            border-radius: 10px;
+        } /*El contenedor que es un contorno dentro de la pagina para darle mas estilo, con la modificacion de anchura,*/
+          /*margenes, color de transfondo, el espacio interior, una sombra alrededor y esquinas redondeadas. */
+
+        header {
+            display: flex;
+            gap: 30px;
+            text-align: left;
+            padding: 15px;
+        } /*El encabezado donde ira la imagen, nombres, gmail e telefono. */
+
+        header img {
+            width: 120px;
+            height: 120px;
+            margin-bottom: 10px;
+            border: 2px #000000;
+        } /*La configuracion de la imagen de encabezado, con una modificacion cuadratica y bordes. */
+
+        .header-text {
+            display: flex;
+            flex-direction: column;
+        } /*La organizacion del texto escrito en una columna alado de la imagen. */
+
+        h1 {
+            margin: 10px 0;
+            color: #000000;
+        }
+
+        h2 {
+            border-bottom: 4px solid #000cb9;
+            padding-bottom: 5px;
+            margin-top: 10px;
+        }
+
+        ul {
+            list-style: square;
+        }
+
+        table {
+            width: 100%;
+            border-collapse:  collapse;
+            margin-top: 10px;
+        }
+
+        table, th, td {
+            border: 1px solid #0077b6;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background: #8ed2e7;
+            color: rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="FotoHV.jpg" alt="Foto personal">
+            <div class="header-text">
+            <h1>Marcos Jose Cevallos Mera</h1>
+            <p><strong>Email:</strong> marcoscevallos233@gmail.com | 
+               <strong>Teléfono:</strong> 0990159669 |
+               <strong>Ciudad:</strong> Manta</p>
+            </div>
+        </header>
+
+        <div>
+            <h2>Estudios</h2>
+            <ul>
+                <li>Bachillerato en ciencias.</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Experiencia Laboral</h2>
+            <ul>
+                <li>Asistencia al cliente</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Capacitaciones</h2>
+            <ul>
+                <li>Curso para ruta de analisis de datos hasta aprendizaje automatico</li>
+            </ul>
+        </div>
+
+        <div>
+            <h2>Referencias Personales</h2>
+            <table>
+                <tr>
+                    <th>Nombre</th>
+                    <th>Profesión</th>
+                    <th>Teléfono</th>
+                    <th>Correo Electrónico</th>
+                </tr>
+                <tr>
+                    <td>Marcos Anchundia</td>
+                    <td>Marketing</td>
+                    <td>0912412551</td>
+                    <td>MarcosA@email.com</td>
+                </tr>
+                <tr>
+                    <td>Vianny Mera</td>
+                    <td>Psiquiatra</td>
+                    <td>0954117634</td>
+                    <td>Devanny@email.com</td>
+                </tr>
+                <tr>
+                    <td>Abel Delgado</td>
+                    <td>Medicina</td>
+                    <td>0914296540</td>
+                    <td>AbelIsaac@email.com</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>
