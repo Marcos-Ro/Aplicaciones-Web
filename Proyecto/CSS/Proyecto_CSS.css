@@ -1,0 +1,149 @@
+:root{
+  --uleam-red:#b30000;
+  --bg:#f0f4f8;
+  --card:#ffffff;
+  --muted:#666;
+}
+
+*{box-sizing:border-box}
+body{
+  margin:0;
+  font-family: Inter, Arial, sans-serif;
+  background:var(--bg);
+  color:#222;
+}
+
+.header{
+  background:var(--uleam-red);
+  color:#fff;
+  padding:12px 16px;
+  display:flex;
+  align-items:center;
+  gap:16px;
+  justify-content:space-between;
+}
+.logo-placeholder{
+  width:52px;height:52px;background:rgba(255,255,255,0.15);border-radius:8px;
+}
+.header h1{margin:0;font-size:18px}
+.btn-logout{background:#fff;color:var(--uleam-red);border:none;padding:8px 10px;border-radius:8px;cursor:pointer}
+
+.container{max-width:1000px;margin:24px auto;padding:0 16px}
+.card{background:var(--card);padding:16px;border-radius:10px;box-shadow:0 6px 18px rgba(0,0,0,0.06);margin-bottom:16px}
+.form-card{max-width:520px;margin:0 auto}
+h2,h3{color:var(--uleam-red)}
+input,textarea,select{width:100%;padding:10px;border:1px solid #ddd;border-radius:8px;margin:6px 0}
+button{background:var(--uleam-red);color:white;border:none;padding:10px 12px;border-radius:8px;cursor:pointer}
+button:hover{opacity:0.95}
+.small{font-size:13px;color:var(--muted)}
+.grid-4{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px}
+.card-link{display:block;padding:14px;text-align:center;border-radius:8px;background:#fafafa;text-decoration:none;color:var(--uleam-red);border:1px solid #f1d5d5}
+.card-link:hover{background:#fff}
+
+.hidden{display:none}
+.lista{list-style:none;padding:0;margin:0}
+.lista li{padding:10px;border-bottom:1px solid #eee}
+
+.radio-row{display:inline-block;margin-right:10px}
+.help{margin-top:10px;font-size:13px;color:#333}
+.code{font-family:monospace}
+@media (max-width:600px){
+  .header{flex-direction:column;align-items:flex-start}
+  .logo-placeholder{width:44px;height:44px}
+}
+.volver {
+  margin: 15px;
+}
+
+#btnVolver {
+  background-color: #b30000;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+#btnVolver:hover {
+  background-color: #800000;
+}
+.presentacion {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  margin: 20px auto;
+  width: 80%;
+  max-width: 700px;
+}
+
+.foto-doctor {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #b30000;
+}
+
+.info-doctor h2 {
+  color: #b30000;
+  margin: 0;
+}
+
+.info-doctor p {
+  color: #333;
+  font-size: 16px;
+  margin-top: 8px;
+}
+/* 🔹 Estilos para la gestión de citas */
+form label {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.btn-registrar {
+  background-color: #b30000;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.btn-registrar:hover {
+  background-color: #800000;
+}
+
+#tablaCitas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#tablaCitas th, #tablaCitas td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: center;
+}
+
+#tablaCitas th {
+  background-color: #b30000;
+  color: white;
+}

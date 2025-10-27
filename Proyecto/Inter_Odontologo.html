@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panel Odontólogo - ULEAM</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" id="logo2" class="logo-placeholder">
+    <h1>Panel Odontólogo</h1>
+    <section class ="presentacion">
+        <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\doctor.jpg" alt = "Foto del Doctor" class="foto-doctor">
+        <div class="info-doctor">
+            <h2>Bienvenido, Dr. Perez</h2>
+            <p>odontologo del policlinico ULEAM</p>
+        </div>
+    </section>
+    <button class="btn-logout" id="logoutBtn">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2 id="saludoOdontologo">Bienvenido</h2>
+      <div class="grid-4">
+        <a class="card-link" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Interfaz_vistaH.html">Ver Historiales Clínicos</a>
+        <a class="card-link" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Regis_HistoriaC.html">Agregar Historia Clínica</a>
+        <a class="card-link" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Inte_Imagen.html">Análisis de Imagen (Radiografías / Fotos)</a>
+        <button class="card-link" id="toggleCitasBtn">Ver Citas</button>
+        <button onclick="window.location.href='Inter_citas.html'"> Gestionar citas</button>
+      </div>
+    </section>
+
+    <section class="card hidden" id="citasSection">
+      <h3>Citas programadas</h3>
+      <table id="tablaCitas">
+        <thead>
+          <tr><th>Cédula</th><th>Fecha</th><th>Hora</th><th>Odontólogo</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+      <p class="small">Nota: las citas se almacenan en el prototipo local (localStorage).</p>
+    </section>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>

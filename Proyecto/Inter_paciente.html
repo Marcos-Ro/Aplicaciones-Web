@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Portal del Paciente - ULEAM</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" class="logo-placeholder">
+    <h1>Portal del Paciente</h1>
+    <button class="btn-logout" id="logoutPaciente">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <h2>Bienvenido, Juan Pérez</h2>
+      <p>Aquí puedes consultar tus citas odontológicas y tu historial clínico.</p>
+    </section>
+
+    <!-- 📅 Citas del paciente -->
+    <section class="card">
+      <h3>Mis Citas Programadas</h3>
+      <table id="tablaCitasPaciente">
+        <thead>
+          <tr>
+            <th>Fecha</th>
+            <th>Hora</th>
+            <th>Motivo</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <!-- 🦷 Historial clínico del paciente -->
+    <section class="card">
+      <h3>Mi Historial Clínico</h3>
+      <div id="historialPaciente"></div>
+    </section>
+
+    <div class="volver">
+      <button id="btnVolverInicio">⬅ Volver al inicio</button>
+    </div>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>

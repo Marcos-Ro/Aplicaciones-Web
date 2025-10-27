@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Ver Historiales - ULEAM</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" id="logo4" class="logo-placeholder">
+    <h1>Historiales Clínicos</h1>
+    <div class="volver">
+        <button id="btnVolver">Volver al menu</button>
+    </div>
+    <button class="btn-logout" id="logoutBtn3">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <input id="buscarCedula" type="text" placeholder="Buscar por cédula...">
+      <button id="btnBuscar">Buscar</button>
+    </section>
+
+    <section class="card">
+      <h3>Pacientes registrados</h3>
+      <ul id="listaPacientes" class="lista"></ul>
+    </section>
+
+    <section class="card hidden" id="detalleSection">
+      <h3>Detalle de historial</h3>
+      <div id="detalle"></div>
+      <button id="volverLista">Volver a la lista</button>
+    </section>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>

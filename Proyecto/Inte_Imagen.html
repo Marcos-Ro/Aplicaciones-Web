@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Análisis de Imagen - ULEAM</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" id="logo5" class="logo-placeholder">
+    <h1>Análisis de Imagen Odontológica</h1>
+    <button class="btn-logout" id="logoutBtn4">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="analisisForm">
+        <label>Cédula del paciente</label>
+        <input id="ana_cedula" type="text" required placeholder="0102030405">
+
+        <label>Seleccionar imagen (JPG / PNG / JPEG)</label>
+        <input id="ana_file" type="file" accept="image/png, image/jpeg, image/jpg" required>
+
+        <div id="previewWrapper" class="preview hidden">
+          <p>Previsualización:</p>
+          <img id="previewImg" alt="previsualizacion" style="max-width:100%;border-radius:8px;">
+        </div>
+
+        <label>Observaciones / Diagnóstico visual</label>
+        <textarea id="ana_observaciones" rows="3"></textarea>
+
+        <button type="submit">Guardar Análisis</button>
+      </form>
+      <p class="small">La imagen se codifica en Base64 y se guarda en localStorage (prototipo).</p>
+    </section>
+
+    <section class="card">
+      <h3>Análisis guardados</h3>
+      <ul id="listaAnalisis" class="lista"></ul>
+    </section>
+
+    <button id="backMenuAna">Volver al menú</button>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>

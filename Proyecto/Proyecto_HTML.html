@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Policlínico ULEAM - Login</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" id="logo" class="logo-placeholder">
+    <h1>Policlínico Odontológico - ULEAM</h1>
+  </header>
+
+  <main class="container">
+    <h2>Iniciar sesión</h2>
+
+    <p>Selecciona tu rol e ingresa credenciales:</p>
+
+    <div class="card form-card">
+      <label class="radio-row"><input type="radio" name="rol" value="odontologo" checked> Odontólogo</label>
+      <label class="radio-row"><input type="radio" name="rol" value="paciente"> Paciente</label>
+
+      <form id="loginForm">
+        <label for="user">Usuario (email o cédula):</label>
+        <input id="user" type="text" required placeholder="doctor@uleam.edu.ec o 0102030405">
+
+        <label for="pass">Contraseña:</label>
+        <input id="pass" type="password" required placeholder="contraseña">
+
+        <button type="submit">Ingresar</button>
+      </form>
+
+      <div class="help">
+        <p><strong>Credenciales de prueba</strong></p>
+        <p>Odontólogo: <code>doctor@uleam.edu.ec</code> / <code>12345</code></p>
+        <p>Paciente: <code>0102030405</code> / <code>abc123</code></p>
+      </div>
+    </div>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>

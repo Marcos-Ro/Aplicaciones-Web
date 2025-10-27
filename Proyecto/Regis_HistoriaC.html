@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Registrar Historia Clínica - ULEAM</title>
+  <link rel="stylesheet" href="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\CSS\Proyecto_CSS.css">
+</head>
+<body>
+  <header class="header">
+    <img src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\imagenes\uleam logo.jpg" alt="Logo ULEAM" id="logo3" class="logo-placeholder">
+    <h1>Registrar Historia Clínica</h1>
+    <button class="btn-logout" id="logoutBtn2">Cerrar sesión</button>
+  </header>
+
+  <main class="container">
+    <section class="card">
+      <form id="historiaForm">
+        <label>Cédula del paciente</label>
+        <input id="hist_cedula" type="text" required placeholder="0102030405">
+
+        <label>Nombre del paciente</label>
+        <input id="hist_nombre" type="text" required placeholder="Juan Perez">
+
+        <label>Edad</label>
+        <input id="hist_edad" type="number" required min="0">
+
+        <label>Examen intraoral / Observaciones</label>
+        <textarea id="hist_examen" rows="3"></textarea>
+
+        <label>Diagnóstico</label>
+        <textarea id="hist_diagnostico" rows="2"></textarea>
+
+        <label>Tratamiento propuesto</label>
+        <textarea id="hist_tratamiento" rows="2"></textarea>
+
+        <label>Antecedentes médicos</label>
+        <textarea id="hist_antecedentes" rows="2"></textarea>
+
+        <button type="submit">Registrar Historia</button>
+      </form>
+    </section>
+
+    <section class="card">
+      <h3>Vincular análisis de imagen existente</h3>
+      <p>Si ya subiste un análisis de imagen para esta cédula, al registrar la historia se linkeará automáticamente.</p>
+      <button id="backToMenu">Volver al menú</button>
+      <p class="small">Las historias se guardan en el almacenamiento local (localStorage).</p>
+    </section>
+  </main>
+
+  <script src="C:\Users\rokur\Documents\Aplicaciones web\Proyecto\Javascrip\Proyecto_Javascript.js"></script>
+</body>
+</html>
