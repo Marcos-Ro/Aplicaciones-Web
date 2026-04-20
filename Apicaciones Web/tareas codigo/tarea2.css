@@ -1,0 +1,60 @@
+body { 
+font-family: Arial, sans-serif;
+margin: 0;
+background: #faf8f8; 
+color: #333;
+} /* en esta parte modificaremos el contorno de la pagina, con una definicion de texto, margenes,*/
+/*color de transfondo y color del texto. */
+
+.container {
+width: 50%;
+margin: auto;
+background: #dad9e9;
+padding: 25px;
+box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+border-radius: 10px;
+} /*El contenedor que es un contorno dentro de la pagina para darle mas estilo, con la modificacion de anchura,*/
+/*margenes, color de transfondo, el espacio interior, una sombra alrededor y esquinas redondeadas. */
+
+header {
+display: flex;
+gap: 30px;
+text-align: left;
+padding: 15px;
+} /*El encabezado donde ira nombres, gmail e telefono. */
+.header-text {
+display: flex;
+flex-direction: column;
+} /*La organizacion del texto escrito en una columna alado de la imagen. */
+
+h1 {
+margin: 10px 0;
+color: #000000;
+}
+
+h2 {
+border-bottom: 4px solid #000000;
+padding-bottom: 5px;
+margin-top: 10px;
+}
+
+ul {
+list-style: square;
+}
+
+table {
+width: 100%;
+border-collapse:  collapse;
+margin-top: 10px;
+}
+
+table, th, td {
+border: 1px solid #0077b6;
+padding: 10px;
+text-align: left;
+}
+
+th {
+background: #8ed2e7;
+color: rgb(0, 0, 0);
+} /*En esta parte se modifican los estilos de los encabezados, las listas y las tablas, con la definicion de margenes, colores, tipo de lista, bordes y espacios. */
